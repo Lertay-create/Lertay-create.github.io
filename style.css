@@ -1,0 +1,366 @@
+Css
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Encabezado */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-icono {
+    width: 40px;
+    cursor: pointer;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    color: #ccc;
+}
+
+.header-content .btn-1 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.header-content .btn-1:hover {
+    background-color: #e5533d;
+}
+
+/* Sección Registro e Inicio de Sesión */
+#auth-forms {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+#auth-forms h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#auth-forms input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#auth-forms button {
+    padding: 10px;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#auth-forms button:hover {
+    background-color: #555;
+}
+
+/* Sección About */
+.about {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff6347;
+}
+
+.about p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.about .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+/* Testimonios */
+.testimonial {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.testimonial h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.testimonial-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.testimonial-1 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+.testimonial-1 img {
+    width: 100%;
+    max-width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial-1 h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.testimonial-1 p {
+    color: #666;
+    font-size: 1em;
+}
+
+.star {
+    width: 20px;
+    height: auto;
+}
+
+/* Contacto */
+h1 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .about .about-content,
+    .testimonial .testimonial-content {
+        flex-direction: column;
+    }
+
+    .header-content h1 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content h1 {
+        font-size: 1.5em;
+    }
+
+    .about h2,
+    .testimonial h2 {
+        font-size: 1.6em;
+    }
+
+    .testimonial-1 {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .header-content .btn-1 {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
+
+
+
+HTML 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facheritos</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro e Inicio de Sesión</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Registro y Inicio de Sesión</h1>
+            
+            <div id="auth-forms">
+                <div id="login-form">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="email" id="login-email" placeholder="Correo Electrónico" required>
+                    <input type="password" id="login-password" placeholder="Contraseña" required>
+                    <button onclick="login()">Iniciar Sesión</button>
+                    <p>O inicia sesión con:</p>
+                    <button onclick="loginWithGoogle()">Google</button>
+                    <button onclick="loginWithFacebook()">Facebook</button>
+                    <button onclick="loginWithInstagram()">Instagram</button>
+                </div>
+    
+                <div id="register-form">
+                    <h2>Registro</h2>
+                    <input type="text" id="register-username" placeholder="Nombre de Usuario" required>
+                    <input type="email" id="register-email" placeholder="Correo Electrónico" required>
+                    <input type="password" id="register-password" placeholder="Contraseña" required>
+                    <button onclick="register()">Registrar</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo"></a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="FACHERITOS 222.jpg" class="menu-icono" alt="Facheritos">
+            </label>
+
+            <div class="header-content container">
+                <div class="header-txt">
+                    <h1>Facheritos</h1>
+                    <p>Vestimos peluditos con los trapitos de sus papitos.</p>
+                    <a href="" class="btn-1">Conoce más</a>
+                </div>
+            </div>
+        </div>
+    </header>
+  
+    <section class="about">
+        <div class="about-content container">
+            <div class="about-txt">
+                <span>Bienvenido a Facheritos, facheritos es una empresa enfocada en la creación de ropa para animales. ¿Qué tenemos de diferente a los demás? La ropa de Facheritos es 100% reciclada. Cuando una ropa no te quede o simplemente se rompió, puedes darnos esa misma prenda a nosotros y tu mascota tendrá una linda ropita que la cubrirá del frío y además tendrá un diseño único porque será a partir de la elección del dueño.</span>
+                <h2>Bienvenido a Facheritos, tu ropita de confianza</h2>
+                <hr>
+            </div>
+            <div class="about-img">
+                <img src="asdasddasdasdasdasd.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial">
+         
+        <span>Facheritos hace ropa para  animales con la calidad y el precio perfecto</span>
+        <h2>Testimonios</h2>
+        <button onclick="(testimonial)">Comparte tu  experiencia...</button>
+       
+        <div class="testimonial-content container">
+            <div class="testimonial-1">
+                <img src="asddgggggg.jpeg" alt="">
+                <h4>¿Acaso no es la mejor ropa?</h4>
+                <p>Elígenos como tu tienda de confianza</p>
+                <img class="star" src="mascotas-portada.jpg" alt="">
+            </div>
+            <div class="testimonial-1">
+                <img src="../imagenes/t2.jpg" alt="">
+                <h4></h4>
+                <p>Ropa para el frío, ¿Qué más se puede pedir?</p>
+                <img class="star" src="raur.jpeg" alt="">      
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Nuestra ropita</h2>
+        <hr>
+        <h1>Contáctanos al 3238027790</h1>
+    </section>
+
+</body>
+</html>
